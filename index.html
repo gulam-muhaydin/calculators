@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator - Calculators</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231a73e8' d='M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v16h16V4H4m2 2h5v5H6V6m7 0h5v5h-5V6m-7 7h5v5H6v-5m7 0h5v5h-5v-5'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAj1QTFRFAAAA1dXVzc3NxsbGwMDAvLy8urq6ubm5uLi4uLi4uLi4t7e3t7e3tra2tra2tra2tra2tbW1tbW1tbW1tLS0tLS0tLS0s7OzsrKysrKysrKysbGxsbGxsbGxsbGxsLCwsLCwsLCwsLCwsLCwr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+v////KznQrAAAAL3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHj9Wd4AAAABYktHRC5U0xCHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AMLBRcuWqAu5QAAAIpJREFUOMtjYCAKMDIxs7CyMSACdg5OLm4eXj5+AUEGIWERUTFxCUkpaRlZOXkFRSVlFVU1dQ1NLW0dXT19A0MjYxNTM3MLSytrG1s7ewdHJ2cXVzd3D08vbx9fP/+AwKDgkNCw8IjIqOiY2Lj4hMSk5JTUtPSMzKzsnNy8/ILCouKS0rLyikoiXQoAuPAVaD4L8WkAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDMtMTFUMDU6MjM6NDYrMDA6MDCBxbpkAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTAzLTExVDA1OjIzOjQ2KzAwOjAw8JgC2AAAAABJRU5ErkJggg==">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="ri-calculator-line calculator-icon"></i>
+            <a href="index.html" class="brand-name">Calculators</a>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-item">
+                <button class="nav-button">
+                    Calculators
+                    <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Percentage Calculator</a>
+                    <a href="emi-calculator.html">Loan EMI Calculator</a>
+                    <a href="profit-loss-calculator.html">Profit Loss Calculator</a>
+                    <a href="scientific-calculator.html">Scientific Calculator</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Percentage Calculator</h1>
+
+        <div class="calculator">
+            <!-- Calculator 1: What is X% of Y -->
+            <div class="calc-row">
+                <span class="label">What is</span>
+                <input type="number" id="calc1_x" placeholder="X">
+                <span class="label">% of</span>
+                <input type="number" id="calc1_y" placeholder="Y">
+                <span class="label">=</span>
+                <span class="result" id="result1">0</span>
+            </div>
+
+            <!-- Calculator 2: X is what % of Y -->
+            <div class="calc-row">
+                <input type="number" id="calc2_x" placeholder="X">
+                <span class="label">is what % of</span>
+                <input type="number" id="calc2_y" placeholder="Y">
+                <span class="label">=</span>
+                <span class="result" id="result2">0</span>
+            </div>
+
+            <!-- Calculator 3: % change from Origin to New -->
+            <div class="calc-row">
+                <span class="label">% change from</span>
+                <input type="number" id="calc3_origin" placeholder="Origin">
+                <span class="label">to</span>
+                <input type="number" id="calc3_new" placeholder="New">
+                <span class="label">=</span>
+                <span class="result" id="result3">0</span>
+            </div>
+        </div>
+
+        <button id="resetBtn" class="reset-button">
+            <span class="reset-icon">↺</span>
+            Reset
+        </button>
+
+        <button class="toggle-instructions" onclick="toggleInstructions()">Show/Hide Instructions</button>
+
+        <div class="instructions hidden" id="instructions">
+            <h2>How to Use the Percentage Calculator</h2>
+
+            <div class="instructions-section">
+                <h3>Calculator Modes</h3>
+                <ul>
+                    <li><strong>What is X% of Y:</strong>
+                        <div class="example">Example: What is 15% of 200 = 30</div>
+                        <ul>
+                            <li>Enter the percentage (X) in the first field</li>
+                            <li>Enter the number (Y) in the second field</li>
+                            <li>Result shows instantly as you type</li>
+                        </ul>
+                    </li>
+                    <li><strong>X is what % of Y:</strong>
+                        <div class="example">Example: 50 is what % of 200 = 25%</div>
+                        <ul>
+                            <li>Enter the number (X) in the first field</li>
+                            <li>Enter the total (Y) in the second field</li>
+                            <li>Result shows instantly as you type</li>
+                        </ul>
+                    </li>
+                    <li><strong>% change from Origin to New:</strong>
+                        <div class="example">Example: Change from 100 to 150 = 50% increase</div>
+                        <ul>
+                            <li>Enter the original value in the first field</li>
+                            <li>Enter the new value in the second field</li>
+                            <li>Shows the percentage increase/decrease</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="instructions-section">
+                <h3>Tips</h3>
+                <div class="tip">
+                    <ul>
+                        <li>All calculations update in real-time as you type</li>
+                        <li>Use the Reset button to clear all inputs</li>
+                        <li>Results are rounded to 2 decimal places</li>
+                        <li>Negative percentages are supported</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="percentage-calculator.js"></script>
+    <script>
+        function toggleInstructions() {
+            const instructions = document.getElementById('instructions');
+            instructions.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

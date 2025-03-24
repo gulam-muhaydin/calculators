@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan EMI Calculator - Calculators</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231a73e8' d='M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v16h16V4H4m2 2h5v5H6V6m7 0h5v5h-5V6m-7 7h5v5H6v-5m7 0h5v5h-5v-5'/%3E%3C/svg%3E">
+    <title>Loan EMI Calculator - Calculators.ae</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="ri-calculator-line calculator-icon"></i>
+            <a href="index.html" class="brand-name">Calculators</a>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-item">
+                <button class="nav-button">
+                    Calculators
+                    <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Percentage Calculator</a>
+                    <a href="emi-calculator.html">Loan EMI Calculator</a>
+                    <a href="profit-loss-calculator.html">Profit Loss Calculator</a>
+                    <a href="scientific-calculator.html">Scientific Calculator</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Loan EMI Calculator</h1>
+        
+        <div class="calculator">
+            <div class="calc-row">
+                <span class="label">Loan Amount</span>
+                <input type="number" id="loan_amount" placeholder="Enter amount">
+                <span class="label">Interest Rate (%)</span>
+                <input type="number" id="interest_rate" placeholder="Annual rate">
+            </div>
+            <div class="calc-row">
+                <span class="label">Loan Term</span>
+                <input type="number" id="loan_years" placeholder="Years">
+                <select id="loan_term_type" class="select-input">
+                    <option value="years">Years</option>
+                    <option value="months">Months</option>
+                </select>
+            </div>
+
+            <!-- EMI Results -->
+            <div class="emi-info">
+                <div class="info-item highlight">
+                    <span class="info-label">Monthly EMI:</span>
+                    <span id="monthly_emi" class="info-value">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Total Interest:</span>
+                    <span id="total_interest" class="info-value">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Total Payment:</span>
+                    <span id="total_payment" class="info-value">0</span>
+                </div>
+            </div>
+        </div>
+
+        <button id="emiResetBtn" class="reset-button">
+            <span class="reset-icon">↺</span>
+            Reset
+        </button>
+
+        <button class="toggle-instructions" onclick="toggleInstructions()">Show/Hide Instructions</button>
+        
+        <div class="instructions hidden" id="instructions">
+            <h2>How to Use the Loan EMI Calculator</h2>
+            
+            <div class="instructions-section">
+                <h3>Input Fields</h3>
+                <ul>
+                    <li><strong>Loan Amount:</strong>
+                        <ul>
+                            <li>Enter the principal amount you want to borrow</li>
+                            <li>Use numbers only, without commas or currency symbols</li>
+                        </ul>
+                    </li>
+                    <li><strong>Interest Rate:</strong>
+                        <ul>
+                            <li>Enter the annual interest rate as a percentage</li>
+                            <li>Example: For 12% interest, enter "12"</li>
+                        </ul>
+                    </li>
+                    <li><strong>Loan Term:</strong>
+                        <ul>
+                            <li>Enter the duration of the loan</li>
+                            <li>Select either years or months from the dropdown</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="instructions-section">
+                <h3>Results Explained</h3>
+                <ul>
+                    <li><strong>Monthly EMI:</strong> The fixed amount you need to pay each month</li>
+                    <li><strong>Total Interest:</strong> The total interest you'll pay over the loan term</li>
+                    <li><strong>Total Payment:</strong> The total amount you'll pay (Principal + Interest)</li>
+                </ul>
+            </div>
+            
+            <div class="instructions-section">
+                <h3>Tips</h3>
+                <div class="tip">
+                    <ul>
+                        <li>Results update automatically as you enter values</li>
+                        <li>Use the Reset button to clear all inputs</li>
+                        <li>All calculations are rounded to 2 decimal places</li>
+                        <li>The calculator uses the reducing balance method</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="emi-calculator.js"></script>
+    <script src="mobile-menu.js"></script>
+    <script>
+        function toggleInstructions() {
+            const instructions = document.getElementById('instructions');
+            instructions.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html> 
