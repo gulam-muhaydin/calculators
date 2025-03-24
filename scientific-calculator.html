@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator - Calculators</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6444336202234728"
+     crossorigin="anonymous"></script>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231a73e8' d='M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v16h16V4H4m2 2h5v5H6V6m7 0h5v5h-5V6m-7 7h5v5H6v-5m7 0h5v5h-5v-5'/%3E%3C/svg%3E">
     <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAj1QTFRFAAAA1dXVzc3NxsbGwMDAvLy8urq6ubm5uLi4uLi4uLi4t7e3t7e3tra2tra2tra2tra2tbW1tbW1tbW1tLS0tLS0tLS0s7OzsrKysrKysrKysbGxsbGxsbGxsbGxsLCwsLCwsLCwsLCwsLCwr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+v////KznQrAAAAL3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHj9Wd4AAAABYktHRC5U0xCHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AMLBRcuWqAu5QAAAIpJREFUOMtjYCAKMDIxs7CyMSACdg5OLm4eXj5+AUEGIWERUTFxCUkpaRlZOXkFRSVlFVU1dQ1NLW0dXT19A0MjYxNTM3MLSytrG1s7ewdHJ2cXVzd3D08vbx9fP/+AwKDgkNCw8IjIqOiY2Lj4hMSk5JTUtPSMzKzsnNy8/ILCouKS0rLyikoiXQoAuPAVaD4L8WkAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDMtMTFUMDU6MjM6NDYrMDA6MDCBxbpkAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTAzLTExVDA1OjIzOjQ2KzAwOjAw8JgC2AAAAABJRU5ErkJggg==">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -33,7 +35,7 @@
 
     <div class="container">
         <h1>Scientific Calculator</h1>
-        
+
         <div class="calculator scientific-calc">
             <div class="display">
                 <div id="expression" class="expression"></div>
@@ -97,10 +99,10 @@
         </div>
 
         <button class="toggle-instructions" onclick="toggleInstructions()">Show/Hide Instructions</button>
-        
+
         <div class="instructions hidden" id="instructions">
             <h2>How to Use the Scientific Calculator</h2>
-            
+
             <div class="instructions-section">
                 <h3>Basic Operations</h3>
                 <ul>
@@ -117,7 +119,7 @@
                     <li><strong>Clear (C):</strong> Reset the calculator</li>
                 </ul>
             </div>
-            
+
             <div class="instructions-section">
                 <h3>Scientific Functions</h3>
                 <ul>
@@ -151,7 +153,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="instructions-section">
                 <h3>Memory Functions</h3>
                 <ul>
@@ -161,7 +163,7 @@
                     <li><strong>M-:</strong> Memory Subtract - Subtracts current value from memory</li>
                 </ul>
             </div>
-            
+
             <div class="instructions-section">
                 <h3>Tips</h3>
                 <div class="tip">
@@ -184,4 +186,4 @@
         }
     </script>
 </body>
-</html> 
+</html>
